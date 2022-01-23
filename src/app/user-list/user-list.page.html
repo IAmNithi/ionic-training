@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>userList</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="showList">
+
+    <ion-item *ngFor="let items of listItems">
+      <ion-label>{{items}}</ion-label>
+    </ion-item>
+
+  </ion-list> 
+
+  <h2 *ngIf="!showList"> No list to Display</h2>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>todo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="fixed">Enter Todo</ion-label>
+    <ion-input [(ngModel)]="todoInput"></ion-input>
+    <ion-button (click)="addTodo()">Add Todo</ion-button>
+  </ion-item>
+
+
+  <ion-list>
+    <ion-item *ngFor="let values of listArray">
+      <ion-label>{{values}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

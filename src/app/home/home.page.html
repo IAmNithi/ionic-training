@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Input 1</ion-label>
+    <ion-input type="number" placeholder="Enter Input" [(ngModel)]="input1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Input 2</ion-label>
+    <ion-input type="number" placeholder="Enter Input" [(ngModel)]="input2"></ion-input>
+  </ion-item>
+
+  <ion-button color="primary" (click)="printValue()">Calculate</ion-button>
+
+  <h2>Result: {{result}}</h2>
+</ion-content>
